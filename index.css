@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+html,body {
+    height: 100vh;
+}
+
+body {
+    background:grey url(./img/wallp.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+.wrapper>div:nth-child(2) {
+    margin-left: 3em;
+}
+
+.wrapper>div:nth-child(3) {
+    margin-left: 5em;
+}
+
+kbd {
+    border: 1px solid red;
+    display: inline-block;
+    text-align: center;
+    /* line-height: 40px; */
+    width: 50px;
+    height: 40px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+kbd button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    color: black;
+}
+
+kbd:hover button {
+    display: block;
+}
+
+.key {
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%); 
+    border: 1px solid #373737;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #1A1B1c,0 0 0 2px #1F2020,0 3px 0 2px #080808;
+    color: #c5c5c5;
+    font-size: 16px;
+    font-family: Helvetica;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.key img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 18px;
+    bottom: 2px;
+    
+}
+
+.row {
+    margin: 16px; 
+}
+
+.row .key {
+    margin: 0 8px;
+}
+
+.key .text {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    
+}
